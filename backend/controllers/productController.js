@@ -1,4 +1,16 @@
 import Product from "../models/Product.js";
+import fs from "fs";
+import path from "path";
+
+const saveUploadedFile = (file) => {
+    if (!fs.existsSync("uploads")) {
+        fs.mkdirSync("uploads", { recursive: true });
+    }
+    const uniqueName = `${Date.now()}-${Math.round(Math.random() * 1e9)}${path.extname(file.originalname)}`;
+    const filePath = path.join("uploads", uniqueName);
+    fs.writeFileSync(filePath, file.buffer);
+    return `/uploads/${uniqueName}`;
+};
 
 export const createProduct = async (req, res) => {
     try {
@@ -34,7 +46,7 @@ export const createProduct = async (req, res) => {
 
         if (req.files?.images?.length > 0) {
             images = req.files.images.map((file) => ({
-                data: file.buffer.toString("base64"),
+                url: saveUploadedFile(file),
                 contentType: file.mimetype,
             }));
         }
@@ -42,7 +54,7 @@ export const createProduct = async (req, res) => {
         if (req.files?.pdf?.[0]) {
             const pdfFile = req.files.pdf[0];
             pdf = {
-                data: pdfFile.buffer.toString("base64"),
+                url: saveUploadedFile(pdfFile),
                 contentType: pdfFile.mimetype,
                 filename: pdfFile.originalname,
             };
@@ -180,7 +192,7 @@ export const updateProduct = async (req, res) => {
 
         if (req.files?.images?.length > 0) {
             const newImages = req.files.images.map((file) => ({
-                data: file.buffer.toString("base64"),
+                url: saveUploadedFile(file),
                 contentType: file.mimetype,
             }));
             product.images = [...product.images, ...newImages];
@@ -189,7 +201,7 @@ export const updateProduct = async (req, res) => {
         if (req.files?.pdf?.[0]) {
             const pdfFile = req.files.pdf[0];
             product.pdf = {
-                data: pdfFile.buffer.toString("base64"),
+                url: saveUploadedFile(pdfFile),
                 contentType: pdfFile.mimetype,
                 filename: pdfFile.originalname,
             };
@@ -214,6 +226,63 @@ export const deleteProduct = async (req, res) => {
         await product.deleteOne();
 
         res.status(200).json({ message: "Product deleted successfully" });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
+
+export const addProductReview = async (req, res) => {
+    try {
+        const { rating, comment } = req.body;
+        const product = await Product.findById(req.params.id);
+
+        if (!product) {
+            return res.status(404).json({ message: "Product not found" });
+        }
+
+        if (!rating || !comment) {
+            return res.status(400).json({ message: "Please provide rating and comment" });
+        }
+
+        const review = {
+            user: req.user._id,
+            userName: req.user.name,
+            rating: Number(rating),
+            comment,
+        };
+
+        product.reviews.push(review);
+        await product.save();
+
+        res.status(201).json({ message: "Review added successfully", reviews: product.reviews });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
+
+export const deleteProductReview = async (req, res) => {
+    try {
+        const { id, reviewId } = req.params;
+        const product = await Product.findById(id);
+
+        if (!product) {
+            return res.status(404).json({ message: "Product not found" });
+        }
+
+        const review = product.reviews.id(reviewId);
+
+        if (!review) {
+            return res.status(404).json({ message: "Review not found" });
+        }
+
+        if (review.user.toString() !== req.user._id.toString()) {
+            return res.status(403).json({ message: "You can only delete your own reviews" });
+        }
+
+        review.deleteOne();
+        await product.save();
+
+        res.status(200).json({ message: "Review deleted successfully", reviews: product.reviews });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }

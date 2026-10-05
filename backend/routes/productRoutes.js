@@ -6,8 +6,10 @@ import {
     getRelatedProducts,
     updateProduct,
     deleteProduct,
+    addProductReview,
+    deleteProductReview,
 } from "../controllers/productController.js";
-import { protect } from "../middleware/authMiddleware.js";
+import { protect, protectUser } from "../middleware/authMiddleware.js";
 import upload from "../middleware/uploadMiddleware.js";
 
 const router = express.Router();
@@ -34,5 +36,9 @@ router.put(
     updateProduct
 );
 router.delete("/:id", protect, deleteProduct);
+
+// Reviews routes
+router.post("/:id/reviews", protectUser, addProductReview);
+router.delete("/:id/reviews/:reviewId", protectUser, deleteProductReview);
 
 export default router;

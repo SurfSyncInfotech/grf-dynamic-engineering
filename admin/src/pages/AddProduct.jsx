@@ -13,6 +13,16 @@ import {
   Loader2
 } from "lucide-react";
 
+const getImageUrl = (img) => {
+  if (!img) return "";
+  if (img.url) {
+    if (img.url.startsWith("http")) return img.url;
+    const baseUrl = (import.meta.env.VITE_API_URL || "https://grf-8fnl.onrender.com/api").replace("/api", "");
+    return `${baseUrl}${img.url}`;
+  }
+  return `data:${img.contentType};base64,${img.data}`;
+};
+
 const AddProduct = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -377,6 +387,7 @@ const AddProduct = () => {
             >
               <option value="Liters">Liters</option>
               <option value="KL">KL (Kilo Liters)</option>
+              <option value="KG">KG (Kilograms)</option>
               <option value="Tons">Tons</option>
               <option value="Gallons">Gallons</option>
             </select>
@@ -435,7 +446,7 @@ const AddProduct = () => {
               {existingImages.map((img, index) => (
                 <div key={index} className="aspect-[4/3] bg-brand-steel border border-white/10 rounded-sm overflow-hidden relative">
                   <img
-                    src={`data:${img.contentType};base64,${img.data}`}
+                    src={getImageUrl(img)}
                     alt="existing preview"
                     className="w-full h-full object-cover"
                   />

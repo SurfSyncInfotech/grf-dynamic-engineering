@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const Sidebar = () => {
+const Sidebar = ({ hasNewQuotes }) => {
   const { admin, logout } = useAuth();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -92,15 +92,20 @@ const Sidebar = () => {
               to={item.path}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) => `
-                flex items-center space-x-3 px-4 py-3 rounded-sm text-xs font-bold uppercase tracking-wider transition-all duration-200 border-l-2 cursor-pointer
+                flex items-center px-4 py-3 rounded-sm text-xs font-bold uppercase tracking-wider transition-all duration-200 border-l-2 cursor-pointer
                 ${isActive 
                   ? "bg-brand-accent/10 border-brand-accent text-brand-accent" 
                   : "border-transparent text-slate-400 hover:bg-white/[0.02] hover:text-white"
                 }
               `}
             >
-              <item.icon size={16} />
-              <span>{item.name}</span>
+              <div className="flex items-center space-x-3 flex-1">
+                <item.icon size={16} />
+                <span>{item.name}</span>
+              </div>
+              {item.path === "/quotes" && hasNewQuotes && (
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse mr-1 shadow-md shadow-emerald-500/50" />
+              )}
             </NavLink>
           ))}
         </nav>

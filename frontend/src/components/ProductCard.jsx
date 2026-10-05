@@ -1,5 +1,15 @@
 import { Link, useNavigate } from 'react-router-dom';
 
+const getImageUrl = (img) => {
+  if (!img) return "";
+  if (img.url) {
+    if (img.url.startsWith("http")) return img.url;
+    const baseUrl = (import.meta.env.VITE_API_URL || "https://grf-8fnl.onrender.com/api").replace("/api", "");
+    return `${baseUrl}${img.url}`;
+  }
+  return `data:${img.contentType};base64,${img.data}`;
+};
+
 export default function ProductCard({ product }) {
   const navigate = useNavigate();
 
@@ -21,7 +31,7 @@ export default function ProductCard({ product }) {
 
         {product.images && product.images.length > 0 ? (
           <img
-            src={`data:${product.images[0].contentType};base64,${product.images[0].data}`}
+            src={getImageUrl(product.images[0])}
             alt={product.name}
             className="absolute inset-0 w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500"
             style={{ imageRendering: 'auto' }}

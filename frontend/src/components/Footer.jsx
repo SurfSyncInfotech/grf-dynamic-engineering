@@ -80,8 +80,10 @@ export default function Footer() {
                   </svg>
                 </div>
                 <p className="text-slate-500 leading-relaxed font-light">
-                  Dehradun Rd, Saharanpur - 247001,<br />
-                  Uttar Pradesh, India
+                  Shop No.5, Chaudhary Market, C/O Chaudhary Road Car,<br />
+                  Dehradun Road, Opp. Indian Oil Petrol Pump,<br />
+                  Near Laxman Puram (Opp. Transport Nagar),<br />
+                  Saharanpur - 247001, Uttar Pradesh, India
                 </p>
               </div>
               

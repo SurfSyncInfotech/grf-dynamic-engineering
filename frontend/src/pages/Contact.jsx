@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { createLead } from '../api/axios';
-import mapBlueprintImg from '../assets/location_blueprint.png';
+import leadFormImg from '../assets/lead_form_image.png';
 
 const CATEGORIES = [
   "Storage Tank",
@@ -248,8 +248,8 @@ export default function Contact() {
                 onMouseMove={handleMapMouseMove}
               >
                 <img 
-                  src={mapBlueprintImg} 
-                  alt="GRF Location Blueprint" 
+                  src={leadFormImg} 
+                  alt="GRF Design Blueprint" 
                   className="w-full h-48 object-cover opacity-60 group-hover:opacity-75 transition-opacity duration-300"
                 />
                 <div 
@@ -290,8 +290,10 @@ export default function Contact() {
                   <div>
                     <span className="text-slate-500 font-bold uppercase text-[9px] tracking-widest block mb-1.5 font-mono">Company Address</span>
                     <p className="leading-relaxed font-light text-slate-400 text-xs sm:text-sm">
-                      Dehradun Rd, Saharanpur - 247001,<br />
-                      Uttar Pradesh, India
+                      Shop No.5, Chaudhary Market, C/O Chaudhary Road Car,<br />
+                      Dehradun Road, Opp. Indian Oil Petrol Pump,<br />
+                      Near Laxman Puram (Opp. Transport Nagar),<br />
+                      Saharanpur - 247001, Uttar Pradesh, India
                     </p>
                   </div>
                 </div>

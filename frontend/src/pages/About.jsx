@@ -11,6 +11,8 @@ import zainulAbidinImg from '../assets/Zainul Abidin.jpeg';
 import zrRamanImg from '../assets/New ZR RAMAN.jpeg';
 import sajidMalikImg from '../assets/Sajid Malik.jpeg';
 import grfImage from '../assets/GRF-Image.jpeg';
+import hydroTestingImg from '../assets/hydro_testing_setup.jpg';
+import exportShippingImg from '../assets/global_export_shipping.jpg';
 
 export default function About() {
   // States
@@ -134,6 +136,70 @@ export default function About() {
         { label: "Non-Destructive Testing", value: "Radiography (RT) / Ultrasonic (UT)" },
         { label: "Quality Checks", value: "Dye-penetrant (DP) / Magnetic particle (MP)" },
         { label: "Inspection Certs", value: "TC (Test Certificate) & Third-Party Inspect" }
+      ]
+    },
+    {
+      id: 5,
+      title: "Warranty & Hydrostatic Testing",
+      short: "Quality Guarantee & Multi-Bar Hydro Tests",
+      desc: "At G R F Dynamic Engineering, we stand behind the quality, reliability, and performance of every product we manufacture. Our commitment to customer satisfaction is reinforced through comprehensive warranty support...",
+      fullDesc: [
+        "At G R F Dynamic Engineering, we stand behind the quality, reliability, and performance of every product we manufacture. Our commitment to customer satisfaction is reinforced through comprehensive warranty support and rigorous hydrostatic testing procedures that ensure every piece of equipment meets the highest standards of safety, strength, and operational integrity before delivery.",
+        "Hydrostatic testing is one of the most critical stages of our quality assurance process. Using advanced testing equipment, we conduct controlled pressure tests to verify the structural integrity, pressure resistance, and leak-proof performance of pressure vessels, storage tanks, reactors, and other fabricated equipment. Each product is tested according to applicable design specifications and industry standards, ensuring it can safely withstand its intended operating conditions.",
+        "In addition to hydrostatic testing, our quality assurance team performs detailed inspections and verification procedures to confirm dimensional accuracy, weld quality, material integrity, and overall product performance. These comprehensive checks help identify and eliminate potential defects before the equipment reaches the customer, ensuring dependable operation and long service life.",
+        "Our warranty reflects our confidence in the quality of our engineering and manufacturing processes. Every product is built using premium-grade materials, precision fabrication techniques, and strict quality control measures, providing customers with reliable equipment designed for consistent performance in demanding industrial environments. Should any manufacturing-related issue arise within the applicable warranty period, our technical team is committed to providing prompt assistance and appropriate support.",
+        "At G R F Dynamic Engineering, our focus on warranty assurance and comprehensive hydrostatic testing demonstrates our dedication to delivering safe, durable, and high-performance industrial equipment that customers can trust with complete confidence."
+      ],
+      image: hydroTestingImg,
+      details: [
+        { label: "Warranty Coverage", value: "12 to 24 Months Manufacturer Guarantee" },
+        { label: "Hydrostatic Limit", value: "Up to 50 Bar pressure rating" },
+        { label: "Testing Standard", value: "ASME Sec VIII / API 650 compliant" },
+        { label: "Verification TCs", value: "Provided with Third-Party Inspection options" }
+      ]
+    },
+    {
+      id: 6,
+      title: "Quality & Compliance",
+      short: "ISO 9001:2015, GST, MSME & IEC Certificates",
+      desc: "At G R F Dynamic Engineering, quality and compliance are the cornerstones of our manufacturing philosophy. We are committed to maintaining the highest standards of transparency...",
+      fullDesc: [
+        "At G R F Dynamic Engineering, quality and compliance are the cornerstones of our manufacturing philosophy. We are committed to maintaining the highest standards of transparency, regulatory compliance, and operational excellence to ensure that every product and service meets customer expectations as well as applicable national and international requirements. Our focus on quality enables us to build long-term trust with clients across India and global markets.",
+        "Our manufacturing operations are supported by a robust Quality Management System certified under ISO 9001:2015, demonstrating our commitment to consistent quality in engineering, design, welding, fabrication, inspection, and surface finishing. Every stage of the manufacturing process follows documented procedures, strict quality controls, and continuous improvement practices to ensure reliable and repeatable results.",
+        "In addition to our quality certification, G R F Dynamic Engineering is officially registered under MSME (Udyam), holds a valid GSTIN registration, and possesses a registered Import-Export Code (IEC), enabling us to conduct business efficiently across domestic and international markets. These registrations reflect our commitment to operating with complete legal compliance and professional integrity.",
+        "To maintain superior product quality, we implement comprehensive inspection and testing procedures, including material verification, dimensional checks, welding inspections, hydrostatic testing, and Non-Destructive Testing (NDT) wherever required. These quality assurance practices ensure that every product meets the required engineering specifications, safety standards, and performance expectations.",
+        "At G R F Dynamic Engineering, quality is more than a certification—it is a commitment embedded in every project we undertake. By combining regulatory compliance, skilled workmanship, advanced manufacturing practices, and continuous improvement, we deliver dependable industrial equipment that customers can trust for safety, durability, and long-term performance."
+      ],
+      image: grfImage,
+      details: [
+        { label: "Quality System", value: "ISO 9001:2015 Certified" },
+        { label: "Tax Registration", value: "Goods & Services Tax (GSTIN)" },
+        { label: "Enterprise Type", value: "MSME / Udyam Registered" },
+        { label: "Global Trade", value: "DGFT Import-Export Code (IEC)" }
+      ]
+    },
+    {
+      id: 7,
+      title: "International Import & Export",
+      short: "Global Supply Chain & IEC Certified Exports",
+      desc: "At G R F Dynamic Engineering, we are committed to expanding our presence in global markets by providing reliable international import and export services...",
+      fullDesc: [
+        "At G R F Dynamic Engineering, we are committed to expanding our presence in global markets by providing reliable international import and export services for high-quality industrial process equipment and engineering solutions. With a valid Import-Export Code (IEC) and a well-established logistics network, we are fully equipped to serve customers across Asia, the Middle East, Africa, Europe, and other international markets. Our goal is to deliver world-class engineering products that meet international quality standards while ensuring safe, efficient, and timely delivery.",
+        "We specialize in the export of a wide range of industrial equipment, including pressure vessels, storage tanks, process reactors, heat exchangers, mixing vessels, process skids, CIP systems, pipelines, and other customized stainless steel and mild steel fabrication solutions. Every product is manufactured according to customer specifications and engineered to deliver reliable performance in demanding industrial environments. Our solutions are widely suitable for industries such as pharmaceuticals, food and beverage, dairy, chemicals, biotechnology, water treatment, oil and gas, and power generation.",
+        "Quality remains our highest priority throughout the export process. Every product undergoes comprehensive quality inspections, dimensional verification, weld inspections, Non-Destructive Testing (NDT), hydrostatic testing, and final performance evaluations before shipment. These strict quality assurance procedures ensure that our equipment complies with customer requirements and internationally recognized engineering standards, providing confidence in product reliability and long-term performance.",
+        "To ensure safe transportation across international destinations, we follow industry-approved packaging and shipping practices. Equipment is carefully cleaned, protected, and packed using durable materials designed to prevent damage during handling, storage, and transit. Depending on customer requirements and shipment size, we provide customized packaging solutions, including wooden crates, steel frames, moisture-resistant wrapping, and export-grade protective packaging to maintain product integrity throughout the supply chain.",
+        "Our experienced export team manages all aspects of international documentation and regulatory compliance. We prepare and maintain complete export documentation, including commercial invoices, packing lists, certificates of origin, inspection reports, and other required shipping documents. We strictly comply with customs regulations, international trade guidelines, and country-specific import requirements, ensuring smooth customs clearance and efficient international deliveries.",
+        "In addition to exports, G R F Dynamic Engineering also supports the import of specialized raw materials, engineering components, valves, fittings, instruments, and other industrial accessories whenever required for specific customer applications. By sourcing high-quality materials and components from trusted international suppliers, we are able to maintain superior product quality, improve manufacturing capabilities, and meet specialized engineering requirements.",
+        "Our logistics and supply chain management team works closely with reliable freight forwarders, shipping companies, and transportation partners to ensure timely dispatch and delivery of products worldwide. Whether shipping by sea, air, or road, we carefully monitor every stage of the logistics process to provide customers with dependable service and on-time project execution.",
+        "Customer satisfaction remains at the heart of our international operations. We believe in building long-term business relationships through transparent communication, competitive pricing, technical expertise, and responsive customer support. Our engineering team works closely with international clients to understand their project requirements, provide technical guidance, and deliver customized solutions that match their operational needs.",
+        "At G R F Dynamic Engineering, we are continuously expanding our global footprint while maintaining the highest standards of engineering excellence, quality, and compliance. Through dependable import and export services, advanced manufacturing capabilities, and a commitment to customer success, we aim to become a trusted global engineering partner delivering innovative industrial solutions that create lasting value for businesses around the world."
+      ],
+      image: exportShippingImg,
+      details: [
+        { label: "Global Reach", value: "Asia, Middle East, Africa, Europe" },
+        { label: "IEC Code", value: "Registered under DGFT, India" },
+        { label: "Transit Prep", value: "Export-grade packing & steel framing" },
+        { label: "Documentation", value: "Complete customs & origin compliance" }
       ]
     }
   ];
@@ -778,18 +844,162 @@ export default function About() {
                         <div className="absolute bottom-2 left-2 border-b border-l border-brand-accent/20 w-3 h-3"></div>
                         <div className="absolute bottom-2 right-2 border-b border-r border-brand-accent/20 w-3 h-3"></div>
 
-                        {/* Photo Area */}
-                        <div className="relative aspect-[16/9] w-full rounded-xs overflow-hidden border border-white/5 group" style={{ backgroundColor: '#0a0d18' }}>
-                          <div className="absolute inset-0 blueprint-grid opacity-20 pointer-events-none"></div>
-                          <img
-                            src={cap.image}
-                            alt={cap.title}
-                            className="w-full h-full object-cover opacity-80 select-none"
-                          />
-                          <div className="absolute top-3 left-3 border border-white/10 px-2 py-1 rounded-xs text-[8px] font-mono text-slate-400" style={{ backgroundColor: 'rgba(5, 6, 11, 0.9)' }}>
-                            REF_DWG: GRF-CAP-0{cap.id}
+                        {/* Photo Area / Certificates Grid */}
+                        {cap.id === 6 ? (
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {/* ISO Certificate */}
+                            <div className="bg-brand-charcoal/50 p-4 rounded-xs border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                              <div className="absolute top-0 right-0 w-12 h-12 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
+                                <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                              </div>
+                              <div className="space-y-2">
+                                <div className="h-7 w-7 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                  </svg>
+                                </div>
+                                <h4 className="heading-font text-white font-bold text-xs uppercase tracking-wide group-hover:text-brand-accent transition-colors">
+                                  ISO 9001:2015 Cert
+                                </h4>
+                                <p className="text-slate-400 text-[10px] leading-relaxed font-light line-clamp-2">
+                                  Quality Management Systems certification verifying our adherence to strict manufacturing, design, and welding standards.
+                                </p>
+                              </div>
+                              <div className="pt-3 mt-auto">
+                                <a
+                                  href="/certificates/GRF DYNAMIC ENGINEERING 9001 2015 Q2A.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 text-[10px] font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono cursor-pointer"
+                                >
+                                  PDF
+                                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+
+                            {/* GST Certificate */}
+                            <div className="bg-brand-charcoal/50 p-4 rounded-xs border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                              <div className="absolute top-0 right-0 w-12 h-12 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
+                                <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                              </div>
+                              <div className="space-y-2">
+                                <div className="h-7 w-7 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                  </svg>
+                                </div>
+                                <h4 className="heading-font text-white font-bold text-xs uppercase tracking-wide group-hover:text-brand-accent transition-colors">
+                                  GST Certificate
+                                </h4>
+                                <p className="text-slate-400 text-[10px] leading-relaxed font-light line-clamp-2">
+                                  Official Goods and Services Tax registration certificate issued by the Government of India for legal business operations.
+                                </p>
+                              </div>
+                              <div className="pt-3 mt-auto">
+                                <a
+                                  href="/certificates/1.GST CERTIFICATE  NEW.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 text-[10px] font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono cursor-pointer"
+                                >
+                                  PDF
+                                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+
+                            {/* MSME Udyam */}
+                            <div className="bg-brand-charcoal/50 p-4 rounded-xs border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                              <div className="absolute top-0 right-0 w-12 h-12 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
+                                <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                              </div>
+                              <div className="space-y-2">
+                                <div className="h-7 w-7 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                  </svg>
+                                </div>
+                                <h4 className="heading-font text-white font-bold text-xs uppercase tracking-wide group-hover:text-brand-accent transition-colors">
+                                  Udyam Certificate
+                                </h4>
+                                <p className="text-slate-400 text-[10px] leading-relaxed font-light line-clamp-2">
+                                  Ministry of Micro, Small & Medium Enterprises registration certificate confirming national compliance and recognition.
+                                </p>
+                              </div>
+                              <div className="pt-3 mt-auto">
+                                <a
+                                  href="/certificates/Udhyam GRF Dynamic Engineering En (1).pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 text-[10px] font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono cursor-pointer"
+                                >
+                                  PDF
+                                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
+
+                            {/* IEC Certificate */}
+                            <div className="bg-brand-charcoal/50 p-4 rounded-xs border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                              <div className="absolute top-0 right-0 w-12 h-12 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
+                                <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2a2.5 2.5 0 002.5-2.5V8a2 2 0 00-2-2h-1.5a3 3 0 01-3-3V3.055M11 12a1 1 0 100-2 1 1 0 000 2z" />
+                                </svg>
+                              </div>
+                              <div className="space-y-2">
+                                <div className="h-7 w-7 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2a2.5 2.5 0 002.5-2.5V8a2 2 0 00-2-2h-1.5a3 3 0 01-3-3V3.055M11 12a1 1 0 100-2 1 1 0 000 2z" />
+                                  </svg>
+                                </div>
+                                <h4 className="heading-font text-white font-bold text-xs uppercase tracking-wide group-hover:text-brand-accent transition-colors">
+                                  IEC Certificate
+                                </h4>
+                                <p className="text-slate-400 text-[10px] leading-relaxed font-light line-clamp-2">
+                                  Import Export Code (IEC) certificate issued by the DGFT, enabling global commercial process equipment distribution.
+                                </p>
+                              </div>
+                              <div className="pt-3 mt-auto">
+                                <a
+                                  href="/certificates/certificateOfIEC (1).pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 text-[10px] font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono cursor-pointer"
+                                >
+                                  PDF
+                                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
                           </div>
-                        </div>
+                        ) : (
+                          <div className="relative aspect-[16/9] w-full rounded-xs overflow-hidden border border-white/5 group" style={{ backgroundColor: '#0a0d18' }}>
+                            <div className="absolute inset-0 blueprint-grid opacity-20 pointer-events-none"></div>
+                            <img
+                              src={cap.image}
+                              alt={cap.title}
+                              className="w-full h-full object-cover opacity-80 select-none"
+                            />
+                            <div className="absolute top-3 left-3 border border-white/10 px-2 py-1 rounded-xs text-[8px] font-mono text-slate-400" style={{ backgroundColor: 'rgba(5, 6, 11, 0.9)' }}>
+                              REF_DWG: GRF-CAP-0{cap.id}
+                            </div>
+                          </div>
+                        )}
 
                         {/* Details & Specs Sheet */}
                         <div className="space-y-4">
@@ -849,19 +1059,163 @@ export default function About() {
               <div className="absolute bottom-2 left-2 border-b border-l border-brand-accent/20 w-3 h-3"></div>
               <div className="absolute bottom-2 right-2 border-b border-r border-brand-accent/20 w-3 h-3"></div>
 
-              {/* Photo Area */}
-              <div className="relative aspect-[16/9] w-full rounded-xs overflow-hidden border border-white/5 group" style={{ backgroundColor: '#0a0d18' }}>
-                <div className="absolute inset-0 blueprint-grid opacity-20 pointer-events-none"></div>
-                <img
-                  key={activeCapability.id}
-                  src={activeCapability.image}
-                  alt={activeCapability.title}
-                  className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500 select-none animate-fadeIn"
-                />
-                <div className="absolute top-3 left-3 border border-white/10 px-2 py-1 rounded-xs text-[8px] font-mono text-slate-400" style={{ backgroundColor: 'rgba(5, 6, 11, 0.9)' }}>
-                  REF_DWG: GRF-CAP-0{activeCapability.id}
+              {/* Photo Area / Certificates Grid */}
+              {activeCapability.id === 6 ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {/* ISO Certificate */}
+                  <div className="bg-brand-charcoal/50 p-5 rounded-xs border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-12 h-12 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
+                      <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                      </svg>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="h-8 w-8 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                        <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                      </div>
+                      <h4 className="heading-font text-white font-bold text-xs uppercase tracking-wide group-hover:text-brand-accent transition-colors">
+                        ISO 9001:2015 Cert
+                      </h4>
+                      <p className="text-slate-400 text-[10px] leading-relaxed font-light line-clamp-2">
+                        Quality Management Systems certification verifying our adherence to strict manufacturing, design, and welding standards.
+                      </p>
+                    </div>
+                    <div className="pt-4 mt-auto">
+                      <a
+                        href="/certificates/GRF DYNAMIC ENGINEERING 9001 2015 Q2A.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-[10px] font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono cursor-pointer"
+                      >
+                        PDF
+                        <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* GST Certificate */}
+                  <div className="bg-brand-charcoal/50 p-5 rounded-xs border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-12 h-12 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
+                      <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="h-8 w-8 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                        <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                      </div>
+                      <h4 className="heading-font text-white font-bold text-xs uppercase tracking-wide group-hover:text-brand-accent transition-colors">
+                        GST Certificate
+                      </h4>
+                      <p className="text-slate-400 text-[10px] leading-relaxed font-light line-clamp-2">
+                        Official Goods and Services Tax registration certificate issued by the Government of India for legal business operations.
+                      </p>
+                    </div>
+                    <div className="pt-4 mt-auto">
+                      <a
+                        href="/certificates/1.GST CERTIFICATE  NEW.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-[10px] font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono cursor-pointer"
+                      >
+                        PDF
+                        <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* MSME Udyam */}
+                  <div className="bg-brand-charcoal/50 p-5 rounded-xs border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-12 h-12 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
+                      <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="h-8 w-8 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                        <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                      </div>
+                      <h4 className="heading-font text-white font-bold text-xs uppercase tracking-wide group-hover:text-brand-accent transition-colors">
+                        Udyam Certificate
+                      </h4>
+                      <p className="text-slate-400 text-[10px] leading-relaxed font-light line-clamp-2">
+                        Ministry of Micro, Small & Medium Enterprises registration certificate confirming national compliance and recognition.
+                      </p>
+                    </div>
+                    <div className="pt-4 mt-auto">
+                      <a
+                        href="/certificates/Udhyam GRF Dynamic Engineering En (1).pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-[10px] font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono cursor-pointer"
+                      >
+                        PDF
+                        <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* IEC Certificate */}
+                  <div className="bg-brand-charcoal/50 p-5 rounded-xs border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-12 h-12 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
+                      <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2a2.5 2.5 0 002.5-2.5V8a2 2 0 00-2-2h-1.5a3 3 0 01-3-3V3.055M11 12a1 1 0 100-2 1 1 0 000 2z" />
+                      </svg>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="h-8 w-8 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                        <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2a2.5 2.5 0 002.5-2.5V8a2 2 0 00-2-2h-1.5a3 3 0 01-3-3V3.055M11 12a1 1 0 100-2 1 1 0 000 2z" />
+                        </svg>
+                      </div>
+                      <h4 className="heading-font text-white font-bold text-xs uppercase tracking-wide group-hover:text-brand-accent transition-colors">
+                        IEC Certificate
+                      </h4>
+                      <p className="text-slate-400 text-[10px] leading-relaxed font-light line-clamp-2">
+                        Import Export Code (IEC) certificate issued by the DGFT, enabling global commercial process equipment distribution.
+                      </p>
+                    </div>
+                    <div className="pt-4 mt-auto">
+                      <a
+                        href="/certificates/certificateOfIEC (1).pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-[10px] font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono cursor-pointer"
+                      >
+                        PDF
+                        <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="relative aspect-[16/9] w-full rounded-xs overflow-hidden border border-white/5 group" style={{ backgroundColor: '#0a0d18' }}>
+                  <div className="absolute inset-0 blueprint-grid opacity-20 pointer-events-none"></div>
+                  <img
+                    key={activeCapability.id}
+                    src={activeCapability.image}
+                    alt={activeCapability.title}
+                    className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500 select-none animate-fadeIn"
+                  />
+                  <div className="absolute top-3 left-3 border border-white/10 px-2 py-1 rounded-xs text-[8px] font-mono text-slate-400" style={{ backgroundColor: 'rgba(5, 6, 11, 0.9)' }}>
+                    REF_DWG: GRF-CAP-0{activeCapability.id}
+                  </div>
+                </div>
+              )}
 
               {/* Details & Specs Sheet */}
               <div className="space-y-4">
@@ -1497,166 +1851,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Quality & Compliance Certificates Section */}
-        <section className="mb-24">
-          <div className="mb-10">
-            <span className="text-[10px] font-mono text-brand-accent uppercase tracking-widest block">// REGULATORY COMPLIANCE</span>
-            <h2 className="heading-font text-2xl sm:text-3xl text-white font-bold uppercase mt-1">
-              Quality & Compliance Certificates
-            </h2>
-            <div className="h-px bg-white/[0.04] w-full mt-3"></div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* ISO Certificate */}
-            <div className="bg-brand-charcoal/80 p-6 rounded-sm border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
-                <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                </svg>
-              </div>
-              <div className="space-y-4">
-                <div className="h-10 w-10 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="heading-font text-white font-bold text-sm sm:text-base uppercase tracking-wide group-hover:text-brand-accent transition-colors">
-                    ISO 9001:2015 Certificate
-                  </h3>
-                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed font-light">
-                    Quality Management Systems certification verifying our adherence to strict manufacturing, design, and welding standards.
-                  </p>
-                </div>
-              </div>
-              <div className="pt-6 mt-auto">
-                <a
-                  href="/certificates/GRF DYNAMIC ENGINEERING 9001 2015 Q2A.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono"
-                >
-                  View Certificate PDF
-                  <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            {/* GST Certificate */}
-            <div className="bg-brand-charcoal/80 p-6 rounded-sm border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
-                <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
-                </svg>
-              </div>
-              <div className="space-y-4">
-                <div className="h-10 w-10 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="heading-font text-white font-bold text-sm sm:text-base uppercase tracking-wide group-hover:text-brand-accent transition-colors">
-                    GST Certificate
-                  </h3>
-                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed font-light">
-                    Official Goods and Services Tax registration certificate issued by the Government of India for legal business operations.
-                  </p>
-                </div>
-              </div>
-              <div className="pt-6 mt-auto">
-                <a
-                  href="/certificates/1.GST CERTIFICATE  NEW.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono"
-                >
-                  View Certificate PDF
-                  <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            {/* MSME Udyam */}
-            <div className="bg-brand-charcoal/80 p-6 rounded-sm border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
-                <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
-                </svg>
-              </div>
-              <div className="space-y-4">
-                <div className="h-10 w-10 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="heading-font text-white font-bold text-sm sm:text-base uppercase tracking-wide group-hover:text-brand-accent transition-colors">
-                    Udyam Certificate
-                  </h3>
-                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed font-light">
-                    Ministry of Micro, Small & Medium Enterprises registration certificate confirming national compliance and recognition.
-                  </p>
-                </div>
-              </div>
-              <div className="pt-6 mt-auto">
-                <a
-                  href="/certificates/Udhyam GRF Dynamic Engineering En (1).pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono"
-                >
-                  View Certificate PDF
-                  <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            {/* IEC Certificate */}
-            <div className="bg-brand-charcoal/80 p-6 rounded-sm border border-white/5 hover:border-brand-accent/30 transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 pointer-events-none opacity-5 group-hover:opacity-10 transition-opacity">
-                <svg className="w-full h-full text-brand-accent" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
-                </svg>
-              </div>
-              <div className="space-y-4">
-                <div className="h-10 w-10 rounded-sm bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2a2.5 2.5 0 002.5-2.5V8a2 2 0 00-2-2h-1.5a3 3 0 01-3-3V3.055M11 12a1 1 0 100-2 1 1 0 000 2z" />
-                  </svg>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="heading-font text-white font-bold text-sm sm:text-base uppercase tracking-wide group-hover:text-brand-accent transition-colors">
-                    IEC Code Certificate
-                  </h3>
-                  <p className="text-slate-400 text-xs sm:text-sm leading-relaxed font-light">
-                    Import Export Code (IEC) certificate issued by the DGFT, enabling global commercial process equipment distribution.
-                  </p>
-                </div>
-              </div>
-              <div className="pt-6 mt-auto">
-                <a
-                  href="/certificates/certificateOfIEC (1).pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-bold text-brand-accent hover:text-white uppercase tracking-wider transition-colors font-mono"
-                >
-                  View Certificate PDF
-                  <svg className="h-4.5 w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Quality & Compliance Certificates Section Moved to Capabilities Console */}
 
         {/* Call to Action: Inquiry Link */}
         <section className="text-center bg-brand-charcoal/30 border border-dashed border-white/10 rounded-sm p-10 relative overflow-hidden">

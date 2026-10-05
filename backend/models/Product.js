@@ -11,6 +11,30 @@ const specificationSchema = new mongoose.Schema({
     },
 });
 
+const reviewSchema = new mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+        required: true,
+    },
+    userName: {
+        type: String,
+        required: true,
+    },
+    rating: {
+        type: Number,
+        required: true,
+        min: 1,
+        max: 5,
+    },
+    comment: {
+        type: String,
+        required: true,
+    },
+}, {
+    timestamps: true,
+});
+
 const productSchema = new mongoose.Schema(
     {
         name: {
@@ -45,6 +69,9 @@ const productSchema = new mongoose.Schema(
 
         images: [
             {
+                url: {
+                    type: String,
+                },
                 data: {
                     type: String,
                 },
@@ -55,6 +82,9 @@ const productSchema = new mongoose.Schema(
         ],
 
         pdf: {
+            url: {
+                type: String,
+            },
             data: {
                 type: String,
             },
@@ -98,6 +128,8 @@ const productSchema = new mongoose.Schema(
             type: Number,
             default: 0,
         },
+
+        reviews: [reviewSchema],
     },
     {
         timestamps: true,

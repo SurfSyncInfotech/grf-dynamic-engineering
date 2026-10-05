@@ -386,7 +386,8 @@ html.light .border-white\/20 {
 }
 
 /* Invert dark map blueprint schematic to light technical map */
-html.light img[src*="location_blueprint"] {
+html.light img[src*="location_blueprint"],
+html.light img[src*="lead_form_image"] {
   filter: invert(0.9) hue-rotate(180deg) brightness(1.15) contrast(1.15) !important;
   opacity: 0.95 !important;
 }

@@ -10,6 +10,16 @@ import {
   AlertCircle
 } from "lucide-react";
 
+const getImageUrl = (img) => {
+  if (!img) return "";
+  if (img.url) {
+    if (img.url.startsWith("http")) return img.url;
+    const baseUrl = (import.meta.env.VITE_API_URL || "https://grf-8fnl.onrender.com/api").replace("/api", "");
+    return `${baseUrl}${img.url}`;
+  }
+  return `data:${img.contentType};base64,${img.data}`;
+};
+
 const Products = () => {
   const { showToast } = useToast();
   const navigate = useNavigate();
@@ -125,7 +135,7 @@ const Products = () => {
                 
                 {product.images && product.images.length > 0 ? (
                   <img 
-                    src={`data:${product.images[0].contentType};base64,${product.images[0].data}`} 
+                    src={getImageUrl(product.images[0])} 
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />

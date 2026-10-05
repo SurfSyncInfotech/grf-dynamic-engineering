@@ -72,3 +72,49 @@ export const createLead = async (leadData) => {
 
   return mockSuccess;
 };
+
+export const registerUser = async (name, email, password) => {
+  const { default: axios } = await import('axios');
+  const response = await axios.post(`${import.meta.env.VITE_API_URL || 'https://grf-8fnl.onrender.com/api'}/users/register`, {
+    name,
+    email,
+    password
+  });
+  return response.data;
+};
+
+export const loginUser = async (email, password) => {
+  const { default: axios } = await import('axios');
+  const response = await axios.post(`${import.meta.env.VITE_API_URL || 'https://grf-8fnl.onrender.com/api'}/users/login`, {
+    email,
+    password
+  });
+  return response.data;
+};
+
+export const addProductReview = async (productId, reviewData, token) => {
+  const { default: axios } = await import('axios');
+  const response = await axios.post(
+    `${import.meta.env.VITE_API_URL || 'https://grf-8fnl.onrender.com/api'}/products/${productId}/reviews`,
+    reviewData,
+    {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    }
+  );
+  return response.data;
+};
+
+export const deleteProductReview = async (productId, reviewId, token) => {
+  const { default: axios } = await import('axios');
+  const response = await axios.delete(
+    `${import.meta.env.VITE_API_URL || 'https://grf-8fnl.onrender.com/api'}/products/${productId}/reviews/${reviewId}`,
+    {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    }
+  );
+  return response.data;
+};

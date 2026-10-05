@@ -20,12 +20,13 @@ import {
 const Quotes = () => {
   const { showToast } = useToast();
 
-  // Lifted States from AppLayout Outlet Context
+  // Lifted States & Methods from AppLayout Outlet Context
   const {
     inquiries, setInquiries,
     inquiriesLoading: loading, setInquiriesLoading: setLoading,
     inquiriesError: error, setInquiriesError: setError,
-    whatsappClickCount, setWhatsappClickCount
+    whatsappClickCount, setWhatsappClickCount,
+    fetchInquiries, fetchWhatsAppClicks
   } = useOutletContext();
 
   // Search & Filter States
@@ -52,52 +53,9 @@ const Quotes = () => {
     "Other"
   ];
 
-  const fetchWhatsAppClicks = async () => {
-    try {
-      const data = await analyticsApi.getWhatsAppClicks();
-      if (data && data.success) {
-        setWhatsappClickCount(data.count);
-      }
-    } catch (err) {
-      console.error("Failed to fetch WhatsApp click counts", err);
-    }
-  };
-
-  const fetchInquiries = async (showLoading = true) => {
-    try {
-      if (showLoading) {
-        setLoading(true);
-        setError(null);
-      }
-      const data = await leadsApi.getLeads();
-      const list = data.leads || data || [];
-      setInquiries(list);
-      fetchWhatsAppClicks();
-    } catch (err) {
-      console.error(err);
-      if (showLoading) {
-        setError("Failed to fetch quotation request list.");
-        showToast("Error loading quotation requests.", "error");
-      }
-    } finally {
-      if (showLoading) {
-        setLoading(false);
-      }
-    }
-  };
   useEffect(() => {
-    if (inquiries.length === 0) {
-      fetchInquiries(true);
-    } else {
-      // Revalidate silently in the background
-      fetchInquiries(false);
-    }
-
-    const interval = setInterval(() => {
-      fetchInquiries(false);
-    }, 60000);
-
-    return () => clearInterval(interval);
+    // Revalidate silently in the background on mount
+    fetchInquiries(false);
   }, []);
 
   const triggerDelete = (id) => {

@@ -7,6 +7,7 @@ import leadRoutes from "./routes/leadRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import analyticsRoutes from "./routes/analyticsRoutes.js";
 import faqRoutes from "./routes/faqRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 import { seedFAQs } from "./controllers/faqController.js";
 import { seedProducts } from "./controllers/productSeeder.js";
 
@@ -23,12 +24,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use("/uploads", express.static("uploads"));
 
 app.use("/api/products", productRoutes);
 app.use("/api/leads", leadRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/analytics", analyticsRoutes);
 app.use("/api/faqs", faqRoutes);
+app.use("/api/users", userRoutes);
 app.get("/api/db-status", async (req, res) => {
     try {
         const mongoose = (await import("mongoose")).default;
